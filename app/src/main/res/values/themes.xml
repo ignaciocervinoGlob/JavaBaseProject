@@ -12,5 +12,16 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/wallpaper_main_background</item>
+    </style>
+
+    <style name="style_parking_button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_main_activity_parking_button</item>
+    </style>
+
+    <style name="style_title_label">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_main_activity_title_label</item>
     </style>
 </resources>
