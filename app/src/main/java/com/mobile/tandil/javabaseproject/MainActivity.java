@@ -9,7 +9,6 @@ import com.mobile.tandil.javabaseproject.mvp.presenter.SelectParkingPresenter;
 import com.mobile.tandil.javabaseproject.mvp.view.SelectParkingView;
 
 public class MainActivity extends AppCompatActivity {
-
     private ActivityMainBinding binding;
     private MainActivityContract.MainActivityPresenter presenter;
 
@@ -20,5 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         presenter = new SelectParkingPresenter(new SelectParkingModel(), new SelectParkingView(this, binding));
+
+        setListeners();
+    }
+
+    private void setListeners() {
+        binding.buttonMainActivitySelectParking.setOnClickListener(view -> presenter.onSetParkingLotsButtonPressed());
     }
 }

@@ -2,4 +2,8 @@
 <resources>
     <dimen name="size_main_activity_title_label">25sp</dimen>
     <dimen name="size_main_activity_parking_button">15sp</dimen>
+    <dimen name="size_main_activity_parking_text_input">15sp</dimen>
+    <dimen name="size_main_activity_parking_text_start_padding">12dp</dimen>
+    <dimen name="size_main_activity_parking_text_end_padding">12dp</dimen>
+    <dimen name="size_main_activity_parking_lots_text_layout_height">40dp</dimen>
 </resources>

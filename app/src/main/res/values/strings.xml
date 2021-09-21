@@ -2,4 +2,6 @@
     <string name="app_name">JavaBaseProject</string>
     <string name="text_main_activity_parking_button">Select parking</string>
     <string name="text_main_activity_title_label">Parking System</string>
+    <string name="text_parking_input_hint">Number of parking</string>
+    <string name="main_activity_toast_parking_lots">There are %d lots available</string>
 </resources>
