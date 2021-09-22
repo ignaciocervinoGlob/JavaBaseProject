@@ -24,4 +24,14 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/size_main_activity_title_label</item>
     </style>
+
+    <style name="style_input_number_parking_lots">
+        <item name="android:hint">@string/text_parking_input_hint</item>
+        <item name="android:background">@drawable/parking_lot_input</item>
+        <item name="android:textSize">@dimen/size_main_activity_parking_text_input</item>
+        <item name="android:paddingStart">@dimen/size_main_activity_parking_text_start_padding</item>
+        <item name="android:paddingEnd">@dimen/size_main_activity_parking_text_end_padding</item>
+        <item name="android:ems">@integer/ems_main_activity_parking_text_input</item>
+        <item name="android:inputType">number</item>
+    </style>
 </resources>
