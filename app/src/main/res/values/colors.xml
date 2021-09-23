@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="french_rose_cancel_button_parking_lots_input">#EC407A</color>
+    <color name="scooter_submit_button_parking_lots_input">#26C6DA</color>
+    <color name="silver_set_parking_lots_dialog_background">#CCC0C0C0</color>
+    <color name="woodsmoke_set_parking_lots_dialog_border">#0d0e0e</color>
 </resources>

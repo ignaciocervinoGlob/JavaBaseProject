@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/text_main_activity_title"
-        style="@style/style_title_label"
+        style="@style/TextMainActivityTitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_main_activity_title_label"
@@ -19,19 +19,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.192" />
 
-    <EditText
-        android:id="@+id/input_main_activity_parking_lots"
-        style="@style/style_input_number_parking_lots"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/size_main_activity_parking_lots_text_layout_height"
-        app:layout_constraintBottom_toTopOf="@id/button_main_activity_select_parking"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_main_activity_title" />
-
     <Button
         android:id="@+id/button_main_activity_select_parking"
-        style="@style/style_parking_button"
+        style="@style/ButtonMainActivitySelectParkingStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_main_activity_parking_button"

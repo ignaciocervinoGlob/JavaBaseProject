@@ -1,6 +1,7 @@
 package com.mobile.tandil.javabaseproject.mvp.contract;
 
 public interface MainActivityContract {
+
     interface MainActivityModel {
         void setParkingLots(int lots);
 
@@ -9,11 +10,11 @@ public interface MainActivityContract {
 
     interface MainActivityPresenter {
         void onSetParkingLotsButtonPressed();
+
+        void setParkingLots(int lots);
     }
 
     interface MainActivityView {
-        void showParkingLots(int lots);
-
-        String getParkingLots();
+        void showSelectParkingLotsDialogFragment();
     }
 }

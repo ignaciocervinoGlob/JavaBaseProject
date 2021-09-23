@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_fragment_set_parking_lots"
+    style="@style/SetParkingLotsDialogStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_set_parking_lots_fragment_title"
+        style="@style/TextSetParkingLotsDialogTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_fragment_set_parking_lots_title_margin_top"
+        android:text="@string/text_dialog_fragment_set_parking_lots_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_set_parking_lots_fragment"
+        style="@style/InputSetParkingLotsDialogNumberStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_dialog_fragment_set_parking_lots_input_height"
+        android:layout_marginTop="@dimen/size_dialog_fragment_set_parking_lots_input_margin_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_set_parking_lots_fragment_title" />
+
+    <Button
+        android:id="@+id/button_fragment_set_parking_lots_cancel"
+        style="@style/ButtonSetParkingLotsDialogCancelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_fragment_set_parking_lots_buttons_margin_top"
+        android:text="@string/text_button_fragment_set_parking_lots_cancel"
+        app:layout_constraintEnd_toStartOf="@id/button_fragment_set_parking_lots_submit"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_set_parking_lots_fragment" />
+
+    <Button
+        android:id="@+id/button_fragment_set_parking_lots_submit"
+        style="@style/ButtonSetParkingLotsDialogSubmitStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_fragment_set_parking_lots_buttons_margin_top"
+        android:text="@string/text_button_fragment_set_parking_lots_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_fragment_set_parking_lots_cancel"
+        app:layout_constraintTop_toBottomOf="@id/input_set_parking_lots_fragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

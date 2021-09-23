@@ -15,17 +15,28 @@
         <item name="android:windowBackground">@drawable/wallpaper_main_background</item>
     </style>
 
-    <style name="style_parking_button">
+    <style name="SetParkingLotsDialogStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding_fragment_set_parking_lots_dialog</item>
+        <item name="android:background">@drawable/rounded_shape_dialog_fragment</item>
+    </style>
+
+    <style name="ButtonMainActivitySelectParkingStyle">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/size_main_activity_parking_button</item>
     </style>
 
-    <style name="style_title_label">
+    <style name="TextMainActivityTitleStyle">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/size_main_activity_title_label</item>
     </style>
 
-    <style name="style_input_number_parking_lots">
+    <style name="TextSetParkingLotsDialogTitleStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/size_set_parking_lots_dialog_title</item>
+    </style>
+
+    <style name="InputSetParkingLotsDialogNumberStyle">
         <item name="android:hint">@string/text_parking_input_hint</item>
         <item name="android:background">@drawable/parking_lot_input</item>
         <item name="android:textSize">@dimen/size_main_activity_parking_text_input</item>
@@ -33,5 +44,17 @@
         <item name="android:paddingEnd">@dimen/size_main_activity_parking_text_end_padding</item>
         <item name="android:ems">@integer/ems_main_activity_parking_text_input</item>
         <item name="android:inputType">number</item>
+        <item name="android:width">@dimen/width_main_activity_parking_lots_input</item>
     </style>
+
+    <style name="ButtonSetParkingLotsDialogCancelStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/french_rose_cancel_button_parking_lots_input</item>
+    </style>
+
+    <style name="ButtonSetParkingLotsDialogSubmitStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/scooter_submit_button_parking_lots_input</item>
+    </style>
+
 </resources>
