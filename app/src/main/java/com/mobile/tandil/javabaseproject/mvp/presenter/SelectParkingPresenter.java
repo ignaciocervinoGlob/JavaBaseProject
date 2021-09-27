@@ -13,7 +13,11 @@ public class SelectParkingPresenter implements MainActivityContract.MainActivity
 
     @Override
     public void onSetParkingLotsButtonPressed() {
-        model.setParkingLots(Integer.valueOf(view.getParkingLots()));
-        view.showParkingLots(model.getParkingLots());
+        view.showSelectParkingLotsDialogFragment();
+    }
+
+    @Override
+    public void setParkingLots(int lots) {
+        model.setParkingLots(lots);
     }
 }

@@ -2,6 +2,11 @@
     <string name="app_name">JavaBaseProject</string>
     <string name="text_main_activity_parking_button">Select parking</string>
     <string name="text_main_activity_title_label">Parking System</string>
+    <string name="text_dialog_fragment_set_parking_lots_title">Set the number of parking</string>
     <string name="text_parking_input_hint">Number of parking</string>
     <string name="main_activity_toast_parking_lots">There are %d lots available</string>
+    <string name="main_activity_error_toast_parking_lots">Enter a number</string>
+    <string name="text_button_fragment_set_parking_lots_cancel">Cancel</string>
+    <string name="text_button_fragment_set_parking_lots_submit">Submit</string>
+    <string name="text_class_cast_exception">%s must implement ParkingLotsInputListener</string>
 </resources>

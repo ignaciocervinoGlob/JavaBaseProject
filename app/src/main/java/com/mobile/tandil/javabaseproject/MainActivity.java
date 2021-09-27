@@ -3,12 +3,13 @@ package com.mobile.tandil.javabaseproject;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.mobile.tandil.javabaseproject.databinding.ActivityMainBinding;
+import com.mobile.tandil.javabaseproject.listeners.ParkingLotsInputListener;
 import com.mobile.tandil.javabaseproject.mvp.contract.MainActivityContract;
 import com.mobile.tandil.javabaseproject.mvp.model.SelectParkingModel;
 import com.mobile.tandil.javabaseproject.mvp.presenter.SelectParkingPresenter;
 import com.mobile.tandil.javabaseproject.mvp.view.SelectParkingView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ParkingLotsInputListener {
     private ActivityMainBinding binding;
     private MainActivityContract.MainActivityPresenter presenter;
 
@@ -25,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setListeners() {
         binding.buttonMainActivitySelectParking.setOnClickListener(view -> presenter.onSetParkingLotsButtonPressed());
+    }
+
+    @Override
+    public void shareLotsInput(int lots) {
+        presenter.setParkingLots(lots);
     }
 }

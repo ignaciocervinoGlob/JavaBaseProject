@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="size_main_activity_title_label">25sp</dimen>
+    <dimen name="size_set_parking_lots_dialog_title">20sp</dimen>
     <dimen name="size_main_activity_parking_button">15sp</dimen>
     <dimen name="size_main_activity_parking_text_input">15sp</dimen>
-    <dimen name="size_main_activity_parking_text_start_padding">12dp</dimen>
-    <dimen name="size_main_activity_parking_text_end_padding">12dp</dimen>
+    <dimen name="size_main_activity_parking_text_start_padding">15dp</dimen>
+    <dimen name="size_main_activity_parking_text_end_padding">15dp</dimen>
     <dimen name="size_main_activity_parking_lots_text_layout_height">40dp</dimen>
+    <dimen name="width_main_activity_parking_lots_input">200dp</dimen>
+    <dimen name="padding_fragment_set_parking_lots_dialog">20dp</dimen>
+    <dimen name="width_stroke_fragment_dialog_set_parking_lots">5dp</dimen>
+    <dimen name="size_dialog_fragment_set_parking_lots_title_margin_top">30dp</dimen>
+    <dimen name="size_dialog_fragment_set_parking_lots_input_height">48dp</dimen>
+    <dimen name="size_dialog_fragment_set_parking_lots_input_margin_top">25dp</dimen>
+    <dimen name="size_dialog_fragment_set_parking_lots_buttons_margin_top">28dp</dimen>
 </resources>
