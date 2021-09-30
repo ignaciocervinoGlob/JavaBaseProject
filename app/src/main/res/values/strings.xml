@@ -1,12 +1,22 @@
 <resources>
     <string name="app_name">JavaBaseProject</string>
     <string name="text_main_activity_parking_button">Select parking</string>
+    <string name="text_main_activity_new_ticket_button">New Reservation</string>
     <string name="text_main_activity_title_label">Parking System</string>
     <string name="text_dialog_fragment_set_parking_lots_title">Set the number of parking</string>
     <string name="text_parking_input_hint">Number of parking</string>
     <string name="main_activity_toast_parking_lots">There are %d lots available</string>
     <string name="main_activity_error_toast_parking_lots">Enter a number</string>
+    <string name="parking_reservation_activity_error_toast_empty_input">One or more inputs are missing</string>
+    <string name="parking_reservation_activity_success_toast">Successfully submitted!</string>
     <string name="text_button_fragment_set_parking_lots_cancel">Cancel</string>
     <string name="text_button_fragment_set_parking_lots_submit">Submit</string>
     <string name="text_class_cast_exception">%s must implement ParkingLotsInputListener</string>
+    <string name="text_button_ticket_activity_set_start_date">Start date</string>
+    <string name="text_button_ticket_activity_set_end_date">End date</string>
+    <string name="text_parking_reservation_activity_start_date_title">SELECT START DATE</string>
+    <string name="text_parking_reservation_start_date_hint">Your start date</string>
+    <string name="text_parking_reservation_end_date_hint">Your end date</string>
+    <string name="text_parking_reservation_lots_input_hint">Enter your lot number</string>
+    <string name="text_parking_reservation_security_code_input_hint">Enter your security code</string>
 </resources>

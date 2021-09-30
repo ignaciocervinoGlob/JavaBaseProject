@@ -12,9 +12,13 @@ public interface MainActivityContract {
         void onSetParkingLotsButtonPressed();
 
         void setParkingLots(int lots);
+
+        void onNewParkingReservationButtonPressed();
     }
 
     interface MainActivityView {
         void showSelectParkingLotsDialogFragment();
+
+        void showNewParkingReservationActivity();
     }
 }

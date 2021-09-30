@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_new_parking_reservation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_reservation_blured">
+
+    <TextView
+        android:id="@+id/text_new_parking_reservation_activity_title"
+        style="@style/TextMainActivityTitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_main_activity_new_ticket_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/button_new_parking_reservation_activity_start_date"
+        style="@style/ButtonActivityNewParkingSelectDateStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_ticket_activity_set_start_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_new_parking_reservation_activity_start_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_new_parking_reservation_activity_title"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/text_new_parking_reservation_activity_start_date"
+        style="@style/TextActivityNewParkingStartDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_new_parking_reservation_activity_start_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_new_parking_reservation_activity_start_date"
+        app:layout_constraintTop_toTopOf="@id/button_new_parking_reservation_activity_start_date" />
+
+    <Button
+        android:id="@+id/button_new_parking_reservation_activity_end_date"
+        style="@style/ButtonActivityNewParkingSelectDateStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_ticket_activity_set_end_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_new_parking_reservation_activity_end_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_new_parking_reservation_activity_start_date"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/text_new_parking_reservation_activity_end_date"
+        style="@style/TextActivityNewParkingStartDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:hint="@string/text_parking_reservation_end_date_hint"
+        app:layout_constraintBottom_toBottomOf="@id/button_new_parking_reservation_activity_end_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_new_parking_reservation_activity_end_date"
+        app:layout_constraintTop_toTopOf="@id/button_new_parking_reservation_activity_end_date" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_parking_lot_reservation_activity"
+        style="@style/ParkingReservationActivityInputParkingLotNumberContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_new_parking_reservation_activity_end_date"
+        app:layout_constraintVertical_bias="0.1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_security_code_reservation_activity"
+        style="@style/ParkingReservationActivityInputSecurityCodeNumberContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_parking_lot_reservation_activity"
+        app:layout_constraintVertical_bias="0.1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_new_parking_reservation_cancel"
+        style="@style/ButtonSetParkingLotsDialogCancelStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_new_parking_activity_button_margin"
+        android:text="@string/text_button_fragment_set_parking_lots_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_new_parking_reservation_submit"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_new_parking_reservation_submit"
+        style="@style/ButtonSetParkingLotsDialogSubmitStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_new_parking_activity_button_margin"
+        android:text="@string/text_button_fragment_set_parking_lots_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_new_parking_reservation_cancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

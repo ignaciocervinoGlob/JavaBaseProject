@@ -11,4 +11,7 @@
     <color name="scooter_submit_button_parking_lots_input">#26C6DA</color>
     <color name="silver_set_parking_lots_dialog_background">#CCC0C0C0</color>
     <color name="woodsmoke_set_parking_lots_dialog_border">#0d0e0e</color>
+    <color name="athens_gray_main_activity_title_text">#F3F4F6</color>
+    <color name="bittersweet_button_menu_main_activity">#FF5A60</color>
+    <color name="hippie_blue_new_parking_reservation_activity_date_button">#689EB8</color>
 </resources>
