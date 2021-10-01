@@ -1,6 +1,6 @@
 package com.mobile.tandil.javabaseproject.mvp.presenter;
 
-import com.mobile.tandil.javabaseproject.listeners.ParkingLotsInputListener;
+import com.mobile.tandil.javabaseproject.listener.ParkingLotsInputListener;
 import com.mobile.tandil.javabaseproject.mvp.contract.SetParkingLotsContract;
 
 public class SetParkingLotsPresenter implements SetParkingLotsContract.SetParkingLotsPresenter {
@@ -18,7 +18,7 @@ public class SetParkingLotsPresenter implements SetParkingLotsContract.SetParkin
         if (lotsString.isEmpty()) {
             view.showErrorMessage();
         } else {
-            int lots = Integer.valueOf(lotsString);
+            int lots = Integer.parseInt(lotsString);
             this.parkingLotsInputListener.shareLotsInput(lots);
             view.showParkingLots(lots);
             view.closeSetParkingLotsDialog();

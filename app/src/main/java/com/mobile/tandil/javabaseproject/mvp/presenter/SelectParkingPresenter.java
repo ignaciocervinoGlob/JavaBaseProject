@@ -20,4 +20,9 @@ public class SelectParkingPresenter implements MainActivityContract.MainActivity
     public void setParkingLots(int lots) {
         model.setParkingLots(lots);
     }
+
+    @Override
+    public void onNewParkingReservationButtonPressed() {
+        view.showNewParkingReservationActivity();
+    }
 }

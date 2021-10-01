@@ -1,4 +1,4 @@
-package com.mobile.tandil.javabaseproject.mvp.view;
+package com.mobile.tandil.javabaseproject.mvp.view.base;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,7 +20,9 @@ public class ActivityView {
     }
 
     @Nullable
-    public Context getContext() { return getActivity(); }
+    public Context getContext() {
+        return getActivity();
+    }
 
     @Nullable
     public FragmentManager getSupportFragmentManager() {

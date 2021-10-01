@@ -1,4 +1,4 @@
-package com.mobile.tandil.javabaseproject;
+package com.mobile.tandil.javabaseproject.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,8 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+import com.mobile.tandil.javabaseproject.R;
 import com.mobile.tandil.javabaseproject.databinding.DialogFragmentSetParkingLotsBinding;
-import com.mobile.tandil.javabaseproject.listeners.ParkingLotsInputListener;
+import com.mobile.tandil.javabaseproject.listener.ParkingLotsInputListener;
 import com.mobile.tandil.javabaseproject.mvp.contract.SetParkingLotsContract;
 import com.mobile.tandil.javabaseproject.mvp.presenter.SetParkingLotsPresenter;
 import com.mobile.tandil.javabaseproject.mvp.view.SetParkingLotsView;

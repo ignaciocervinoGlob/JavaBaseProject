@@ -1,4 +1,4 @@
-package com.mobile.tandil.javabaseproject.mvp.view;
+package com.mobile.tandil.javabaseproject.mvp.view.base;
 
 import android.content.Context;
 import androidx.fragment.app.DialogFragment;

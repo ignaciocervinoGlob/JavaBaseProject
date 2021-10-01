@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="size_main_activity_title_label">25sp</dimen>
+    <dimen name="size_main_activity_title_label">35sp</dimen>
     <dimen name="size_set_parking_lots_dialog_title">20sp</dimen>
     <dimen name="size_main_activity_parking_button">15sp</dimen>
     <dimen name="size_main_activity_parking_text_input">15sp</dimen>
@@ -14,4 +14,8 @@
     <dimen name="size_dialog_fragment_set_parking_lots_input_height">48dp</dimen>
     <dimen name="size_dialog_fragment_set_parking_lots_input_margin_top">25dp</dimen>
     <dimen name="size_dialog_fragment_set_parking_lots_buttons_margin_top">28dp</dimen>
+    <dimen name="size_new_parking_activity_button_margin">8dp</dimen>
+    <dimen name="size_main_activity_button_margin">8dp</dimen>
+    <dimen name="size_activity_set_parking_reservation_date_output_height">35dp</dimen>
+    <dimen name="size_parking_reservation_activity_lot_input_margin">16dp</dimen>
 </resources>
