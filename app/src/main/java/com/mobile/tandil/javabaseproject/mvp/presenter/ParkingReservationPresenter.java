@@ -1,6 +1,5 @@
 package com.mobile.tandil.javabaseproject.mvp.presenter;
 
-import android.widget.DatePicker;
 import com.mobile.tandil.javabaseproject.mvp.contract.ParkingReservationActivityContract;
 import com.mobile.tandil.javabaseproject.utils.ConstantUtils;
 import com.mobile.tandil.javabaseproject.utils.DateType;
@@ -35,15 +34,15 @@ public class ParkingReservationPresenter implements ParkingReservationActivityCo
     }
 
     @Override
-    public void onSetDate(DatePicker datePicker) {
+    public void onSetDate(int year, int monthOfYear, int dayOfMonth) {
         Calendar date = Calendar.getInstance();
-        date.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth());
+        date.set(year, monthOfYear, dayOfMonth);
         model.setDate(date);
         view.showTimePicker();
     }
 
     public void onSetTime(int hour, int minute) {
-        Calendar currentDate;
+        Calendar currentDate = Calendar.getInstance();
         if (model.getDateType() == DateType.START) {
             currentDate = model.getStartDate();
         } else {

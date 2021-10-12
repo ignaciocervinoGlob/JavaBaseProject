@@ -35,13 +35,13 @@ public class ParkingReservationActivity extends AppCompatActivity implements Dat
     }
 
     @Override
-    public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-        presenter.onSetDate(datePicker);
+    public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
+        presenter.onSetDate(year,monthOfYear,dayOfMonth);
     }
 
     @Override
-    public void onTimeSet(TimePicker timePicker, int i, int i1) {
-        presenter.onSetTime(timePicker.getHour(), timePicker.getMinute());
+    public void onTimeSet(TimePicker timePicker, int hour, int minutes) {
+        presenter.onSetTime(hour, minutes);
     }
 
 }

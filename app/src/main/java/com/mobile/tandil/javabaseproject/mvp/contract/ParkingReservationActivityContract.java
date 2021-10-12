@@ -1,6 +1,5 @@
 package com.mobile.tandil.javabaseproject.mvp.contract;
 
-import android.widget.DatePicker;
 import com.mobile.tandil.javabaseproject.utils.DateType;
 import java.util.Calendar;
 
@@ -12,7 +11,7 @@ public interface ParkingReservationActivityContract {
 
         void onEndDateButtonPressed();
 
-        void onSetDate(DatePicker datePicker);
+        void onSetDate(int year, int monthOfYear, int dayOfMonth);
 
         void onSetTime(int hour, int minute);
 
