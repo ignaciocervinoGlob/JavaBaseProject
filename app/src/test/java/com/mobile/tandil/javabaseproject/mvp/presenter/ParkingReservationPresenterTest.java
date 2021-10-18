@@ -3,7 +3,7 @@ package com.mobile.tandil.javabaseproject.mvp.presenter;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import com.mobile.tandil.javabaseproject.mvp.contract.ParkingReservationActivityContract;
+import com.mobile.tandil.javabaseproject.mvp.contract.ParkingReservationContract;
 import com.mobile.tandil.javabaseproject.mvp.model.ParkingReservationModel;
 import com.mobile.tandil.javabaseproject.utils.ConstantUtils;
 import org.junit.Before;
@@ -28,10 +28,10 @@ public class ParkingReservationPresenterTest {
     private static final String PARKING_LOT_STRING = "1";
     private static final String SECURITY_CODE = "1234";
     private static final String EMPTY_SECURITY_CODE = "";
-    private ParkingReservationActivityContract.ParkingReservationActivityPresenter presenter;
-    private ParkingReservationActivityContract.ParkingReservationActivityModel model;
+    private ParkingReservationContract.ParkingReservationActivityPresenter presenter;
+    private ParkingReservationContract.ParkingReservationActivityModel model;
     @Mock
-    private ParkingReservationActivityContract.ParkingReservationActivityView view;
+    private ParkingReservationContract.ParkingReservationActivityView view;
 
     @Before
     public void setUp() {
