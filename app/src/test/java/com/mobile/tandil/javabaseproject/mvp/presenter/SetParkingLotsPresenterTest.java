@@ -2,7 +2,6 @@ package com.mobile.tandil.javabaseproject.mvp.presenter;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import com.mobile.tandil.javabaseproject.listener.ParkingLotsInputListener;
 import com.mobile.tandil.javabaseproject.mvp.contract.SetParkingLotsContract;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,7 +22,7 @@ public class SetParkingLotsPresenterTest {
 
     @Before
     public void setUp() {
-        presenter = new SetParkingLotsPresenter(view, parkingLotsInputListener);
+        presenter = new SetParkingLotsPresenter(view);
     }
 
     @Test
